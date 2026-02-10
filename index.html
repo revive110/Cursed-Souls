@@ -31,7 +31,7 @@
     /* HERO SECTION */
     .hero {
       height: 100vh;
-      background: url('https://via.placeholder.com/1920x1080') center/cover no-repeat;
+      background: #0a0a0a;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -56,11 +56,9 @@
     section { padding: 120px 50px; max-width: 1200px; margin: 0 auto; }
     section h2 { font-size: 42px; font-weight: 800; margin-bottom: 40px; text-align: center; }
     section p { font-size: 18px; line-height: 1.8; margin-bottom: 20px; color: #ccc; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
-    .card { background: #111; border-radius: 15px; overflow: hidden; box-shadow: 0 0 40px rgba(0,0,0,0.5); transition: transform 0.3s, box-shadow 0.3s; }
+    .grid { display: grid; grid-template-columns: 1fr; gap: 40px; }
+    .card { background: #111; border-radius: 15px; overflow: hidden; box-shadow: 0 0 40px rgba(0,0,0,0.5); transition: transform 0.3s, box-shadow 0.3s; padding: 20px; }
     .card:hover { transform: translateY(-10px); box-shadow: 0 0 60px rgba(255,63,63,0.5); }
-    .card img { width: 100%; display: block; }
-    .card-content { padding: 20px; }
     .card-content h3 { font-size: 24px; font-weight: 700; margin-bottom: 10px; }
     .card-content p { font-size: 16px; color: #aaa; }
 
@@ -118,21 +116,18 @@
     <h2 class="fade-in">Core Features</h2>
     <div class="grid">
       <div class="card fade-in-delay">
-        <img src="https://via.placeholder.com/400x250" alt="Dynamic Combat">
         <div class="card-content">
           <h3>Dynamic Combat</h3>
           <p>Engage in a combat system that rewards skill, timing, and strategy. Each enemy presents unique patterns, requiring players to adapt, anticipate, and execute precision strikes. The tension of every encounter keeps players on edge, making victory feel truly earned.</p>
         </div>
       </div>
       <div class="card fade-in-delay">
-        <img src="https://via.placeholder.com/400x250" alt="Cursed Dungeons">
         <div class="card-content">
           <h3>Cursed Dungeons</h3>
           <p>Explore procedurally-generated and handcrafted dungeons, each filled with traps, puzzles, and secrets. From claustrophobic corridors to vast cavernous halls, the environments are designed to challenge perception, test courage, and evoke awe.</p>
         </div>
       </div>
       <div class="card fade-in-delay">
-        <img src="https://via.placeholder.com/400x250" alt="Rich Lore">
         <div class="card-content">
           <h3>Rich Lore & Worldbuilding</h3>
           <p>Every corner of Cursed Souls has a story. Ancient ruins, cryptic messages, and mysterious artifacts all contribute to a layered narrative. Players uncover pieces of history, tragedy, and mystery, making exploration as rewarding as combat.</p>
@@ -144,17 +139,7 @@
   <!-- MEDIA -->
   <section id="media">
     <h2 class="fade-in">Media</h2>
-    <div class="grid">
-      <div class="card fade-in-delay">
-        <img src="https://via.placeholder.com/400x250" alt="Concept Art 1">
-      </div>
-      <div class="card fade-in-delay">
-        <img src="https://via.placeholder.com/400x250" alt="Concept Art 2">
-      </div>
-      <div class="card fade-in-delay">
-        <img src="https://via.placeholder.com/400x250" alt="Concept Art 3">
-      </div>
-    </div>
+    <p class="fade-in-delay" style="text-align:center;">Visuals coming soon. Stay tuned for concept art, screenshots, and cinematic teasers as development progresses.</p>
   </section>
 
   <!-- TEAM -->
@@ -162,24 +147,21 @@
     <h2 class="fade-in">Meet the Team</h2>
     <div class="grid">
       <div class="card fade-in-delay">
-        <img src="https://via.placeholder.com/400x250" alt="Founder">
         <div class="card-content">
-          <h3>King</h3>
-          <p>Founder & Creative Director of Vanguard Studios. King leads the vision for Cursed Souls, guiding the team to craft immersive dark fantasy experiences that challenge players’ skills and imagination.</p>
+          <h3>Chase Hughes</h3>
+          <p>CEO & Founder of Vanguard Studios. King leads the vision for Cursed Souls, guiding the team to craft immersive dark fantasy experiences that challenge players’ skills and imagination.</p>
         </div>
       </div>
-      <div class="card fade-in-delay">
-        <img src="https://via.placeholder.com/400x250" alt="Lead Artist">
-        <div class="card-content">
-          <h3>Lead Artist</h3>
-          <p>Responsible for designing the haunting environments, characters, and atmospheres that define Cursed Souls. Every visual element is crafted to evoke tension, beauty, and mystery.</p>
-        </div>
-      </div>
-      <div class="card fade-in-delay">
-        <img src="https://via.placeholder.com/400x250" alt="Lead Programmer">
-        <div class="card-content">
-          <h3>Lead Programmer</h3>
-          <p>Handles all mechanics, combat systems, and optimization. Ensures smooth, challenging, and responsive gameplay that keeps players immersed from the first dungeon to the last.</p>
+     <div class="card fade-in-delay">
+  <div class="card-content">
+    <h3>Lead Artist</h3>
+    <p>Position currently open. We’re seeking a talented artist to craft the haunting environments, characters, and atmospheres that define Cursed Souls. Interested? Join our <a href="https://discord.gg/kf7ZmW2SGX" target="_blank">Discord</a> to apply.</p>
+  </div>
+</div>
+    <div class="card fade-in-delay">
+      <div class="card-content">
+        <h3>Lead Programmer</h3>
+        <p>Position currently open. We’re looking for a skilled programmer to bring Cursed Souls’ combat, mechanics, and world to life. Reach out via our <a href="https://discord.gg/kf7ZmW2SGX" target="_blank">Discord</a> if you’re interested.</p>
         </div>
       </div>
     </div>
@@ -199,7 +181,6 @@
   </footer>
 
   <script>
-    // Simple fade-in on scroll
     const faders = document.querySelectorAll('.fade-in, .fade-in-delay');
     const appearOptions = { threshold: 0.3, rootMargin: "0px 0px -50px 0px" };
     const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
